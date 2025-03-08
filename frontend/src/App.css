@@ -1,0 +1,319 @@
+/* Navbar */
+.navbar {
+  background-color: #b71c1c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+/* About content section */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on mobile */
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 5px 0; /* Add space between items */
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+  nav ul {
+      display: none; /* Hide menu initially */
+      flex-direction: column;
+      background: #8B0000;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul.show {
+      display: flex; /* Show menu when toggled */
+  }
+
+  .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 24px;
+  }
+}
+.hero {
+  background-image: url('./assets/back3.jpg'); /* Adjust the path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.hero-overlay{
+  display: inline-block;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: white;
+  
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Page Container */
+.page-container {
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Full viewport height */
+  text-align: center;
+  background-image: url('./assets/back3.jpg');
+  color: white;
+  background-size: cover;
+  text-align: center;
+  
+  height: 100vh;
+  width: 100%;
+
+}
+
+/* Form Container */
+.form-container {
+  display:inline-flexbox;
+  justify-content: center;
+  place-items:center ;
+  max-width: 500px;
+  margin: 40 auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px solid;
+ 
+
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff5722;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+/* Center Submit Recipe container */
+.submit-recipe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4;
+}
+
+/* Submit recipe box styling */
+.submit-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+/* Style input fields */
+.submit-box input,
+.submit-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style submit button */
+.submit-box button {
+  width: 100%;
+  padding: 10px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-box button:hover {
+  background: #e64a19;
+}
+/* Button Styling */
+/* Centering the button */
+.home-container {
+  /*display: flex;*/
+  padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  background-image: url('./assets/background.jpg'); /* Adjust the path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+/* Center the login container */
+.login-container {
+  padding-top: 10px;
+  margin-top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4;
+}
+
+/* Login box styling */
+.login-box {
+  background: white;
+  padding: 20px;
+  margin-top: 0%;
+  padding-top: 0cm;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+/* Style input fields */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style login button */
+.login-box button {
+  width: 100%;
+  margin-top: 5px;
+  padding-top: auto;
+  padding: 10px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #e64a19;
+}
+/* Centered button */
+.button-container {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.recipes-btn {
+  padding-top: 20px;
+  margin-top: 25px;
+  background-color: #ff5722;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.recipes-btn:hover {
+  background-color: #e64a19;
+}
+/* Recipes Page Styling */
+.recipes-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recipe-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.mt-4{
+  background-color: #f48d60;
+  background-size: cover;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  margin: 10px;
+}
