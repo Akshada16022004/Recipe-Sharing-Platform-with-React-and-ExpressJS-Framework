@@ -27,7 +27,7 @@ A full-stack web application built with the MERN stack (MongoDB, Express.js, Rea
 **Frontend**
 - React.js
 - Axios
-- Bootstrap / Tailwind CSS (optional)
+- Bootstrap
 
 **Backend**
 - Node.js
